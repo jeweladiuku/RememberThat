@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Crash Course </title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <!-- the things shown on the page of the website are within the 2 <body> parts -->
+    <body>
+    <!-- ALL OF THIS STUFF IS JUST FOR THE NAVIGATION BARRRRRR!!! CAN YOU IMAGINE-->
+        <div class="navbar">
+            <div class="container">
+                <a class="logo" href="#">Remember<span>That</span></a>
+                <!-- the alt can help with accessibility ie. screen readers -->
+                <!-- id="mobile-cta" is an identification that can only be used once -->
+                <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+                    
+
+                <nav>
+                    <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                    <ul class="primary-nav">
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+
+                    <ul class="secondary-nav">
+                        <li><a href="#">Contact</a></li>
+                        <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                    </ul>
+
+                    
+                </nav>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="container">
+                <div class="left-col">
+                    <p class="subhead">It's Nitty &amp; Gritty</p>
+                    <h1>A Task App That Doesn't Stink</h1>
+
+                    <div class="hero-cta">
+                        <a href="#" class="primary-cta">Try for free</a>
+                        <a href="#" class="watch-video-cta">
+                            <img src="images/watch.svg" alt="Watch a video">Watch a video
+                        </a>
+                    </div>
+                </div>
+
+                <img src="images/illustration.svg" class="hero-img" alt="illustration">
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <ul class="features-list">
+                    <li>Unlimited Tasks</li>
+                    <li>SMS Task Reminders</li>
+                    <li>Confetti Explosions upon Task Completion</li>
+                    <li>Social Media Announcements</li>
+                    <li>Real Time Collaboration</li>
+                    <li>Other awesome features</li>
+                </ul>
+
+                <img src="images/holding-phone.jpg" alt="Man holding phone">
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="container">
+                <!-- ul = unordered list -->
+
+                <ul>
+                    <li>
+                        <img src="images/person.jpg" alt="person">
+                        <!-- blockquote = good for if you have a quote -->
+                        <blockquote>"hELLO ITS Me, I WAS WONDERing after all these years youd like to meet. to go over everything"
+                        </blockquote>
+                        <cite>-Jewel Adiuku</cite>
+                    </li>
+
+                    <li>
+                        <img src="images/person.jpg" alt="person">
+                        <blockquote>"hELLO ITS Me, I WAS WONDERing after all these years youd like to meet. to go over everything"
+                        </blockquote>
+                        <cite>-Jewel Adiuku</cite>
+                    </li>
+
+                    <li>
+                        <img src="images/person.jpg" alt="person">
+                        <blockquote>"hELLO ITS Me, I WAS WONDERing after all these years youd like to meet. to go over everything"
+                        </blockquote>
+                        <cite>-Jewel Adiuku</cite>
+                    </li>
+
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="conctact-left">
+                    <h2>Contact</h2>
+
+                    <form action="">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="First, Last name">
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email">
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Send us a message"></textarea>
+                        
+                        <input type="submit" class="send-message-cta" value="Send message">
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22433.18319242062!2d-75.71011841297147!3d45.34582665573861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce062cdb9665bb%3A0xc1a0057496bc3e19!2sVittoria%20Trattoria!5e0!3m2!1sen!2sca!4v1646532841185!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+            </div>
+        </section>
+
+        <script>
+
+            const mobileBtn = document.getElementById('mobile-cta')
+                  nav = document.querySelector('nav');
+                  mobileBtnExit = document.getElementById('mobile-exit');
+
+            mobileBtn.addEventListener('click', () => {
+                //when someone clicks this button do whatevere is inside of here
+                //open navigation bar
+                nav.classList.add('menu-btn');
+            })
+
+            mobileBtnExit.addEventListener('click', () => {
+                //this will allow you to close the navigation bar
+                nav.classList.remove('menu-btn');
+            })
+        </script>
+
+    </body>
+</html>
